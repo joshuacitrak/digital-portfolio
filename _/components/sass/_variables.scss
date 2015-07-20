@@ -1,0 +1,33 @@
+/**-------------- TYPE ---------------------**/
+@import url(http://fonts.googleapis.com/css?family=Gochi+Hand|Raleway:700,300);
+
+/**-------------- COLORS ---------------------**/
+$dk-green:#015531;
+$md-green:#11b252;
+$lt-green:#20d880;
+$md-blue:#0098e7;
+$lt-blue:#14c1ff;
+$dk-blue:#004468;
+$dk-grey:#6e6e6e;
+$md-grey:#adadad;
+$lt-grey:#d4d4d4;
+$black:#101010;
+$white:#efefef;
+
+/**---------------SUSY-------------------------- **/
+$susy:(
+    columns:12,
+    gutters:1/6,
+    container: 1600px,
+    gutter-position: outside,
+    global-box-sizing:border-box,
+    debug: (image:show)
+    );
+@include border-box-sizing;
+
+//-----------------SCREENS------------------
+$screen-xs:768px;
+$screen-sm:910px;
+$screen-md:1028px;
+$screen-lg:1290px;
+$screen-xl:1600px;

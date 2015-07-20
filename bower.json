@@ -1,0 +1,6 @@
+{
+  "name": "The-digital-portfolio-of-Joshua-Citrak",
+  "dependencies": {
+    "foundation": "~5.4.7"
+  }
+}

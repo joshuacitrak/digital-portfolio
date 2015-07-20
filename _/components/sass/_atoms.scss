@@ -1,0 +1,189 @@
+/**
+GLOBAL
+ELEMENTS
+CONTAINERS
+UTILITIES 
+**/
+/**-------------- GLOBAL --------------------**/
+//* http://www.modularscale.com/?1,2.2&rem&1.618&web&text **/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 22px;
+    font-size: 2.2rem;
+    line-height: 1;
+    font-family: 'Raleway', sans-serif;
+    color: $dk-grey;
+    @include background(lighten($lt-grey, 10%));
+}
+/**-------------- ELEMENTS --------------------**/
+
+h1,
+h2,
+h3,
+h4 {
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2 {
+    font-family: 'Gochi Hand', serif;
+}
+
+h1 {
+    font-size: 57.59px;
+    font-size: 5.759rem;
+}
+
+h2 {
+    font-size: 42.36px;
+    font-size: 4.236rem;
+}
+
+h3,
+h4 {
+    font-size: 26.18px;
+    font-size: 2.618rem;
+    line-height: 1.359
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+p.small-text {
+    font-size: 16.18px;
+    font-size: 1.618rem;
+    line-height: 1.18
+}
+
+p.hand-style {
+    font-family: 'Gochi Hand', serif;
+}
+
+a {
+    text-decoration: underline;
+    color: $md-blue;
+    @include transition(all .35s ease-in-out);
+    &:hover, &:focus {
+        color: $lt-blue;
+        text-decoration: none;
+        @include transition(all .35s ease-in-out);
+    }
+}
+
+header {
+    position: relative;
+}
+
+footer {}
+
+section {
+    position: relative;
+    margin: 11px;
+    margin: 1.1rem;
+    @include background($white);
+    @include clearfix;
+    @media (min-width: $screen-lg) {
+        margin: 22px;
+        margin: 2.2rem;
+    }
+}
+
+button {
+    font-family: 'Asap', sans-serif;
+    @include background($black);
+    color: $lt-grey;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    @include transition(all .35s ease-in-out);
+    &:hover, &:focus, &:visited {
+        @include background(lighten($black, 10%));
+        @include transition(all .35s ease-in-out);
+        outline: none; //why? when this is already in resets?
+    }
+    &:visited {
+        @include background($black);
+    }
+}
+/**-------------- CONTAINERS --------------------**/
+
+.header-container,
+.footer-container {
+    @include container();
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm);
+    }
+    @media (min-width: $screen-md) {
+        @include container($screen-md);
+    }
+    @media (min-width: $screen-lg) {
+        @include container($screen-lg);
+    }
+    @media (min-width: $screen-xl) {
+        @include container($screen-xl);
+    }
+}
+
+.body-container {
+    @include container();
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm);
+    }
+    @media (min-width: $screen-md) {
+        @include container(($screen-md)-84px); //golden ratio
+    }
+    @media (min-width: $screen-lg) {
+        @include container(($screen-lg)-136px);
+    }
+    @media (min-width: $screen-xl) {
+        @include container(($screen-xl)-186px);
+    }
+}
+/**-------------- UTILITIES --------------------**/
+
+.show-for-sr {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.show-for-small-only {
+    @media (min-width: $screen-md) {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
+}
+
+.show-for-medium-up {
+    @media (min-width: $screen-sm) {
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
+}
+
+.hidden
+{
+    display:none;
+     position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
