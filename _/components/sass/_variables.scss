@@ -21,7 +21,7 @@ $susy:(
     container: 1600px,
     gutter-position: outside,
     global-box-sizing:border-box,
-    debug: (image:show)
+    debug: (image:hide)
     );
 @include border-box-sizing;
 
