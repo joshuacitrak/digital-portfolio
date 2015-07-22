@@ -2,11 +2,12 @@
 GLOBAL
 ELEMENTS
 CONTAINERS
+MASONRY
 UTILITIES 
 **/
 /**-------------- GLOBAL --------------------**/
-//* http://www.modularscale.com/?1,2.2&rem&1.618&web&text **/
 
+//* http://www.modularscale.com/?1,2.2&rem&1.618&web&text **/
 html {
     font-size: 62.5%;
 }
@@ -70,14 +71,13 @@ p.hand-style {
     font-family: 'Gochi Hand', serif;
 }
 
-ul
-{
+ul {
     margin-left: 0; //reset
     @include clearfix;
 }
 
-li{
-    position:relative;
+li {
+    position: relative;
 }
 
 a {
@@ -128,22 +128,20 @@ button {
     }
 }
 
-figure
-{
-    position:relative;
+figure {
+    position: relative;
 }
 
-hr
-{
-     border:solid #d4d4d4;
+hr {
+    border: solid #d4d4d4;
     border-width: 1px 0 0;
-    margin:0;
+    margin: 0;
 }
 /**-------------- CONTAINERS --------------------**/
 
 .header-container,
 .footer-container {
-    @include container();
+    @include container(768px);
     @media (min-width: $screen-sm) {
         @include container($screen-sm);
     }
@@ -158,11 +156,8 @@ hr
     }
 }
 
-.body-container {
+.projects-container {
     @include container();
-    @media (min-width: $screen-sm) {
-        @include container($screen-sm);
-    }
     @media (min-width: $screen-md) {
         @include container(($screen-md)-84px); //golden ratio
     }
@@ -171,6 +166,94 @@ hr
     }
     @media (min-width: $screen-xl) {
         @include container(($screen-xl)-186px);
+    }
+}
+/**--------------MASONRY--------------**/
+
+.projects-gutter {
+    width: gutter();
+}
+
+.projects-column {
+    width: span(1);
+}
+
+//need to set a height for each screen size
+.projects-item {
+    width: span(12);
+    height: 350px;
+    margin-top: gutter();
+}
+
+.projects-item-xs { //300x300 max
+    @media (min-width: $screen-xs) {
+        width: span(4);
+        height:300px;
+    }
+    @media (min-width: $screen-sm) {
+        width: span(3);
+        height:300px;
+    }
+    @media (min-width: $screen-md) {
+        width: span(4);
+        height:300px;
+    }
+    @media (min-width: $screen-md) {
+        width: span(3);
+        height:300px;
+    }
+}
+
+.projects-item-sm { //300x440 max
+    @media (min-width: $screen-xs) {
+        width: span(4);
+        height:400px;
+    }
+    @media (min-width: $screen-sm) {
+        width: span(3);
+        height:400px;
+    }
+    @media (min-width: $screen-md) {
+        width: span(4);
+        height:400px;
+    }
+    @media (min-width: $screen-lg) {
+        width: span(3);
+        height:400px;
+    }
+}
+
+.projects-item-md { //500x460 max
+    @media (min-width: $screen-xs) {
+        width: span(8);
+        height:400px;
+    }
+    @media (min-width: $screen-sm) {
+        width: span(7);
+        height:400px
+    }
+    @media (min-width: $screen-md) {
+        width: span(5);
+        height:480px
+    }
+}
+
+.projects-item-lg { //765x300
+    @media (min-width: $screen-xs) {
+        width: span(8);
+        height:300px;
+    }
+    @media (min-width: $screen-sm) {
+        width: span(7);
+        height:300px;
+    }
+    @media (min-width: $screen-md) {
+        width: span(6);
+       height:300px;
+    }
+    @media (min-width: $screen-lg) {
+        width: span(5);
+        height:300px;
     }
 }
 /**-------------- UTILITIES --------------------**/
@@ -197,10 +280,9 @@ hr
     }
 }
 
-.hidden
-{
-    display:none;
-     position: absolute !important;
+.hidden {
+    display: none;
+    position: absolute !important;
     top: -9999px !important;
     left: -9999px !important;
 }

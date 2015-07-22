@@ -2988,6 +2988,7 @@ th.hide-for-touch {
 GLOBAL
 ELEMENTS
 CONTAINERS
+MASONRY
 UTILITIES 
 **/
 /**-------------- GLOBAL --------------------**/
@@ -3120,7 +3121,7 @@ hr {
 /**-------------- CONTAINERS --------------------**/
 .header-container,
 .footer-container {
-  max-width: 1600px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto; }
   .header-container:after,
@@ -3173,50 +3174,117 @@ hr {
         display: block;
         clear: both; } }
 
-.body-container {
+.projects-container {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto; }
-  .body-container:after {
+  .projects-container:after {
     content: " ";
     display: block;
     clear: both; }
-  @media (min-width: 910px) {
-    .body-container {
-      max-width: 910px;
-      margin-left: auto;
-      margin-right: auto; }
-      .body-container:after {
-        content: " ";
-        display: block;
-        clear: both; } }
   @media (min-width: 1028px) {
-    .body-container {
+    .projects-container {
       max-width: 944px;
       margin-left: auto;
       margin-right: auto; }
-      .body-container:after {
+      .projects-container:after {
         content: " ";
         display: block;
         clear: both; } }
   @media (min-width: 1290px) {
-    .body-container {
+    .projects-container {
       max-width: 1154px;
       margin-left: auto;
       margin-right: auto; }
-      .body-container:after {
+      .projects-container:after {
         content: " ";
         display: block;
         clear: both; } }
   @media (min-width: 1600px) {
-    .body-container {
+    .projects-container {
       max-width: 1414px;
       margin-left: auto;
       margin-right: auto; }
-      .body-container:after {
+      .projects-container:after {
         content: " ";
         display: block;
         clear: both; } }
+
+/**--------------MASONRY--------------**/
+.projects-gutter {
+  width: 1.20482%; }
+
+.projects-column {
+  width: 7.22892%; }
+
+.projects-item {
+  width: 100%;
+  height: 350px;
+  margin-top: 1.20482%; }
+
+@media (min-width: 768px) {
+  .projects-item-xs {
+    width: 32.53012%;
+    height: 300px; } }
+@media (min-width: 910px) {
+  .projects-item-xs {
+    width: 24.09639%;
+    height: 300px; } }
+@media (min-width: 1028px) {
+  .projects-item-xs {
+    width: 32.53012%;
+    height: 300px; } }
+@media (min-width: 1028px) {
+  .projects-item-xs {
+    width: 24.09639%;
+    height: 300px; } }
+
+@media (min-width: 768px) {
+  .projects-item-sm {
+    width: 32.53012%;
+    height: 400px; } }
+@media (min-width: 910px) {
+  .projects-item-sm {
+    width: 24.09639%;
+    height: 400px; } }
+@media (min-width: 1028px) {
+  .projects-item-sm {
+    width: 32.53012%;
+    height: 400px; } }
+@media (min-width: 1290px) {
+  .projects-item-sm {
+    width: 24.09639%;
+    height: 400px; } }
+
+@media (min-width: 768px) {
+  .projects-item-md {
+    width: 66.26506%;
+    height: 400px; } }
+@media (min-width: 910px) {
+  .projects-item-md {
+    width: 57.83133%;
+    height: 400px; } }
+@media (min-width: 1028px) {
+  .projects-item-md {
+    width: 40.96386%;
+    height: 480px; } }
+
+@media (min-width: 768px) {
+  .projects-item-lg {
+    width: 66.26506%;
+    height: 300px; } }
+@media (min-width: 910px) {
+  .projects-item-lg {
+    width: 57.83133%;
+    height: 300px; } }
+@media (min-width: 1028px) {
+  .projects-item-lg {
+    width: 49.39759%;
+    height: 300px; } }
+@media (min-width: 1290px) {
+  .projects-item-lg {
+    width: 40.96386%;
+    height: 300px; } }
 
 /**-------------- UTILITIES --------------------**/
 .show-for-sr {
@@ -3353,6 +3421,8 @@ hr {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  margin-top: 10px;
+  margin-top: 1rem;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
@@ -3367,3 +3437,8 @@ hr {
 .bio-content-container .bio-content-active {
   max-height: 200px;
   opacity: 1; }
+
+.footer-contact-container {
+  text-align: center; }
+  .footer-contact-container ul {
+    display: inline-block; }
