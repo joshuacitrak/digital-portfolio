@@ -1,6 +1,7 @@
 $(document).ready(function () {
     console.log("document ready");
     $(".fa-chevron-down").click(chevronClickHandler);
+    $(".projects-item").click(projectsItemClick);
 
     function chevronClickHandler(evt) {
         console.log('clicked');
@@ -21,6 +22,10 @@ $(document).ready(function () {
         $('.bio-content').addClass('bio-content-active');
         console.log("open bio");
     }; //open bio
+    
+    function projectsItemClick(evt){
+        
+    };
 
     var $masonryContainer = $('.masonry');
 

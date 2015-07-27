@@ -133,8 +133,9 @@ figure {
 }
 
 hr {
-    border: solid #d4d4d4;
-    border-width: 1px 0 0;
+    border-top: solid #d4d4d4;
+  border-bottom: solid #adadad;
+  border-width: 1px 0 1px 0;
     margin: 0;
 }
 /**-------------- CONTAINERS --------------------**/
@@ -168,94 +169,7 @@ hr {
         @include container(($screen-xl)-186px);
     }
 }
-/**--------------MASONRY--------------**/
 
-.projects-gutter {
-    width: gutter();
-}
-
-.projects-column {
-    width: span(1);
-}
-
-//need to set a height for each screen size
-.projects-item {
-    width: span(12);
-    height: 350px;
-    margin-top: gutter();
-}
-
-.projects-item-xs { //300x300 max
-    @media (min-width: $screen-xs) {
-        width: span(4);
-        height:300px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(3);
-        height:300px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(4);
-        height:300px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(3);
-        height:300px;
-    }
-}
-
-.projects-item-sm { //300x440 max
-    @media (min-width: $screen-xs) {
-        width: span(4);
-        height:400px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(3);
-        height:400px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(4);
-        height:400px;
-    }
-    @media (min-width: $screen-lg) {
-        width: span(3);
-        height:400px;
-    }
-}
-
-.projects-item-md { //500x460 max
-    @media (min-width: $screen-xs) {
-        width: span(8);
-        height:400px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(7);
-        height:400px
-    }
-    @media (min-width: $screen-md) {
-        width: span(5);
-        height:480px
-    }
-}
-
-.projects-item-lg { //765x300
-    @media (min-width: $screen-xs) {
-        width: span(8);
-        height:300px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(7);
-        height:300px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(6);
-       height:300px;
-    }
-    @media (min-width: $screen-lg) {
-        width: span(5);
-        height:300px;
-    }
-}
 /**-------------- UTILITIES --------------------**/
 
 .show-for-sr {
