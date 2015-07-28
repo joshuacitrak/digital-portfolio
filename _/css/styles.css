@@ -3334,10 +3334,10 @@ hr {
   text-decoration: none; }
   .bio-content-container a:hover > .fa-chevron-down, .bio-content-container a:focus > .fa-chevron-down {
     border: 1px solid #a1a1a1;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out; }
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 .bio-content-container h3 {
   font-weight: normal;
   font-size: 16.18px;
@@ -3348,10 +3348,10 @@ hr {
   opacity: 0;
   margin-top: 10px;
   margin-top: 1rem;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  -webkit-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out; }
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
   .bio-content-container .bio-content h3 {
     font-weight: normal;
     font-size: 22px;
@@ -3454,18 +3454,18 @@ figure.projects-figure img {
   max-width: none;
   width: -webkit-calc(100% + 20px);
   width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
   -moz-transform: translate3d(-10px, 0, 0);
   -ms-transform: translate3d(-10px, 0, 0);
   -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
-  -moz-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   -webkit-transition-property: opacity;
@@ -3489,16 +3489,18 @@ figure.projects-figure figcaption {
 figure.projects-figure h2 {
   position: relative;
   overflow: hidden;
-  padding: 0.5em 0;
+  padding: 3px 0;
+  padding: 0.3em 0;
   line-height: .8;
-  -moz-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  -webkit-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -moz-transition-property: color;
-  -o-transition-property: color;
-  -webkit-transition-property: color;
-  transition-property: color;
+  opacity: .7;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-property: color, opacity;
+  -o-transition-property: color, opacity;
+  -webkit-transition-property: color, opacity;
+  transition-property: color, opacity;
   color: #d4d4d4; }
 
 figure.projects-figure h2::after {
@@ -3506,27 +3508,30 @@ figure.projects-figure h2::after {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #d4d4d4;
   content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
 
 figure.projects-figure:hover h2 {
-  color: #6e6e6e; }
+  color: #6e6e6e;
+  opacity: 1; }
 
 figure.projects-figure:hover h2::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
 figure.projects-figure p {
-  padding: 1em 0;
+  padding: 4px 0;
+  padding: .4em 0;
+  margin: 0;
   opacity: 0;
   color: #d4d4d4;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0); }
 

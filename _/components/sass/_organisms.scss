@@ -44,7 +44,7 @@
         text-decoration: none;
         &:hover>.fa-chevron-down, &:focus>.fa-chevron-down {
             border: 1px solid darken($lt-grey, 20%);
-            @include transition(all .35s ease-in-out);
+            @include transition(all $animationLength ease-in-out);
         }
     }
     h3 {
@@ -58,7 +58,7 @@
         opacity: 0;
         margin-top: 10px;
         margin-top:1rem;
-        @include transition(all .35s ease-in-out);
+        @include transition(all $animationLength ease-in-out);
         h3 {
             font-weight: normal;
             font-size: 22px;
@@ -189,12 +189,12 @@ figure.projects-figure img {
 	max-width: none;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity $animationLength, -webkit-transform $animationLength;
+	transition: opacity $animationLength, transform $animationLength;
 	-webkit-transform: translate3d(-10px,0,0);
 	transform: translate3d(-10px,0,0);
     @include transform(translate3d(-10px,0,0));
-    @include transition-duration(.35s);
+    @include transition-duration($animationLength);
     @include transition-property(opacity);
     @include backface-visibility(false);
 }
@@ -216,10 +216,12 @@ figure.projects-figure figcaption {
 figure.projects-figure h2 {
 	position: relative;
 	overflow: hidden;
-	padding: 0.5em 0;
+    padding:3px 0;
+	padding: 0.3em 0;
     line-height:.8;
-     @include transition-duration(.35s);
-    @include transition-property(color);
+    opacity: .7;
+     @include transition-duration($animationLength);
+    @include transition-property(color, opacity);
      color:$lt-grey;
 }
 
@@ -228,17 +230,18 @@ figure.projects-figure h2::after {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 3px;
+	height: 2px;
 	background: $lt-grey;
 	content: '';
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
+	-webkit-transition: -webkit-transform $animationLength;
+	transition: transform $animationLength;
 	-webkit-transform: translate3d(-100%,0,0);
 	transform: translate3d(-100%,0,0);
 }
 
 figure.projects-figure:hover h2 {
 	color:$dk-grey;
+    opacity:1;
 }
 figure.projects-figure:hover h2::after {
 	-webkit-transform: translate3d(0,0,0);
@@ -246,11 +249,13 @@ figure.projects-figure:hover h2::after {
 }
 
 figure.projects-figure p {
-	padding: 1em 0;
+    padding:4px 0;
+	padding: .4em 0;
+    margin:0;
 	opacity: 0;
     color:$lt-grey;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transition: opacity $animationLength, -webkit-transform $animationLength;
+	transition: opacity $animationLength, transform $animationLength;
 	-webkit-transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 }
