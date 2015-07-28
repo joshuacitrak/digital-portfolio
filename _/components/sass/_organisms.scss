@@ -189,13 +189,9 @@ figure.projects-figure img {
 	max-width: none;
 	width: -webkit-calc(100% + 20px);
 	width: calc(100% + 20px);
-	-webkit-transition: opacity $animationLength, -webkit-transform $animationLength;
-	transition: opacity $animationLength, transform $animationLength;
-	-webkit-transform: translate3d(-10px,0,0);
-	transform: translate3d(-10px,0,0);
     @include transform(translate3d(-10px,0,0));
     @include transition-duration($animationLength);
-    @include transition-property(opacity);
+    @include transition-property(all);
     @include backface-visibility(false);
 }
 
@@ -220,8 +216,9 @@ figure.projects-figure h2 {
 	padding: 0.3em 0;
     line-height:.8;
     opacity: .7;
+     @include transform(translate3d(0, 22px,0));
      @include transition-duration($animationLength);
-    @include transition-property(color, opacity);
+    @include transition-property(all);
      color:$lt-grey;
 }
 
@@ -233,19 +230,18 @@ figure.projects-figure h2::after {
 	height: 2px;
 	background: $lt-grey;
 	content: '';
-	-webkit-transition: -webkit-transform $animationLength;
-	transition: transform $animationLength;
-	-webkit-transform: translate3d(-100%,0,0);
-	transform: translate3d(-100%,0,0);
+    @include transform(translate3d((-100%,0,0));
+     @include transition-duration($animationLength);
+    @include transition-property(all);
 }
 
 figure.projects-figure:hover h2 {
 	color:$dk-grey;
     opacity:1;
+    @include transform(translate3d(0,0,0));
 }
 figure.projects-figure:hover h2::after {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+    @include transform(translate3d(0,0,0));
 }
 
 figure.projects-figure p {
@@ -254,16 +250,14 @@ figure.projects-figure p {
     margin:0;
 	opacity: 0;
     color:$lt-grey;
-	-webkit-transition: opacity $animationLength, -webkit-transform $animationLength;
-	transition: opacity $animationLength, transform $animationLength;
-	-webkit-transform: translate3d(100%,0,0);
-	transform: translate3d(100%,0,0);
+     @include transform(translate3d((100%,0,0));
+     @include transition-duration($animationLength);
+    @include transition-property(all);
 }
 
 figure.projects-figure:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	@include transform(translate3d((0,0,0));
 }
 
 figure.projects-figure a {
