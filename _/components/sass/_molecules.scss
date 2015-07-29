@@ -14,36 +14,67 @@
 }
 /**-----------------SELECTORS--------------**/
 
+.fa-chevron-down,
+.fa-chevron-right,
+.fa-chevron-left {
+    font-size: 22px;
+    font-size: 2.2rem;
+    padding: 3px;
+    border: 1px solid darken($lt-grey, 10%);
+    cursor: pointer;
+    @include border-radius(3px);
+    @media (min-width: $screen-sm) {
+        font-size: 35px;
+        font-size: 3.5rem;
+    }
+}
+
+.fa-chevron-right, .fa-chevron-left{
+    margin-left: 12px;
+    @media (min-width: $screen-xs) {
+        margin-left: 0;
+    }
+}
+
+.fa-chevron-right {
+    margin-left: 12px;
+    padding-left: 9px;
+    padding-right: 6px;
+}
+
+.fa-chevron-left {
+    padding-right: 9px;
+    padding-left: 6px;
+}
+
 .fa-chevron-down {
     position: absolute;
     top: 11px;
     right: 42.36px;
-    padding: 3px;
-    font-size: 22px;
-    font-size: 2.2rem;
-    border: 1px solid darken($lt-grey, 10%);
-    @include border-radius(3px);
     @media (min-width: $screen-xs) {
         top: 42px;
-          right: 67%;
+        right: 67%;
     }
     @media (min-width: $screen-sm) {
-        font-size: 35px;
-        font-size: 3.5rem;
         top: 45px;
-          right: 575px;
+        right: 575px;
     }
     @media (min-width: $screen-md) {
-         right: 709px;
+        right: 709px;
     }
     @media (min-width: $screen-lg) {
-         right: 960px;
+        right: 960px;
     }
     @media (min-width: $screen-xl) {
-         right: 1279px;
+        right: 1279px;
     }
 }
 
+.slick-disabled{
+    opacity:.5;
+    @include transition-duration($animationLength);
+    @include transition-property(all);
+}
 /**-----------------LISTS---------------------**/
 
 .bio-contact-list-items,
@@ -52,6 +83,13 @@
     font-size: 2.2rem;
     float: left;
     padding-right: 22px;
+}
+
+.bio-contact-list {
+    margin-left: 12px;
+    @media (min-width: $screen-xs) {
+        margin-left: 0;
+    }
 }
 /**----------------UTILITIES -----------------**/
 

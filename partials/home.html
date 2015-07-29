@@ -1,0 +1,119 @@
+<section class="projects-container">
+        <div class="masonry">
+            <!-- Masonry gutter and masonry column settings -->
+            <div class="projects-gutter"></div>
+            <div class="projects-column"></div>
+            <!-- Begin masonry items -->
+            <div class="projects-item projects-item-lg">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-lg">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-xs">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-sm">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-xs">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-sm">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-lg">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+            <div class="projects-item projects-item-xs">
+                <figure class="projects-figure">
+                    <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
+                    </div>
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
+                    <figcaption><h2>Main <span>Caption</span></h2>
+							<p>Sarah likes to watch clouds. She's quite depressed.</p>
+							<a href="#">View more</a>
+               </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    
+   <script>
+var $masonryContainer = $('.masonry');
+
+    $masonryContainer.imagesLoaded(function () {
+        //might as well remove the spinners here too
+        $('figure').each(function(i){
+            $('.spinner-container').addClass('hidden');
+        });
+        $masonryContainer.masonry({
+            columnWidth: '.projects-column',
+            gutter: '.projects-gutter',
+            itemSelector: '.projects-item',
+            percentPosition: true,
+        });
+    });
+       
+       $(document).foundation('interchange', {
+        named_queries: {
+            custom_query: 'only screen and (min-width: 768px)'
+        }
+    });
+</script>

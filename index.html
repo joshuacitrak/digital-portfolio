@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" ng-app="ptApp">
+<html class="no-js" lang="en" ng-app="myApp">
 
 <head>
     <meta charset="utf-8">
@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.7/slick.min.css">
     <link rel="stylesheet" type="text/css" href="_/css/styles.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -60,15 +61,89 @@
                 <!--bio-contact-container-->
                 <div class="bio-content-container">
                     <a href="#"><span class="show-for-sr">About me</span><i class="fa fa-chevron-down"></i></a>
-                    <article class="bio-content">
+                    <div class="bio-content">
+                    <article class="bio-desc-content">
                         <h3>Who I am, what I do.</h3>
                         <p>To stack multiple icons, use the fa-stack class on the parent, the fa-stack-1x for the regularly sized icon, and fa-stack-2x for the larger icon. fa-inverse can be used as an alternative icon color. You can even throw larger icon classes on the parent to get further control of sizing. </p>
                     </article>
                     <!--bio-content-->
-                </div>
-                <!--bio-content-container-->
-            </div>
-            <!--bio-container-->
+                    <div class="bio-carousel-container">
+                        <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/768x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 1
+                                    </h3>
+                                    <p>Project description with a few lines of text. Another line of text. Plus another for good measure.<a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/800x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 2
+                                    </h3>
+                                    <p>Project description <a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                           <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/767x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 3
+                                    </h3>
+                                    <p>Project description <a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/768x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 1
+                                    </h3>
+                                    <p>Project description <a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/800x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 2
+                                    </h3>
+                                    <p>Project description <a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                           <div class="bio-carousel-content">
+                            <figure>
+                                <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i></div>
+                                <img data-interchange="[http://placehold.it/767x400, (default)]" class="img-responsive">
+                                <figcaption>
+                                    <h3>
+                                        Project Title 3
+                                    </h3>
+                                    <p>Project description <a href="#">View live site</a> </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div><!--bio carousel-container-->
+                    </div><!--bio-content-->
+                </div><!--bio-content-container-->
+            </div><!--bio-container-->
         </header>
     </section>
 
@@ -84,7 +159,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -95,7 +170,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -106,7 +181,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -117,7 +192,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -128,7 +203,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -139,7 +214,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x400, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -150,7 +225,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/600x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -161,7 +236,7 @@
                 <figure class="projects-figure">
                     <div class="spinner-container"><i class="fa fa-spinner fa-pulse"></i>
                     </div>
-                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (my_custom_query)]" class="img-responsive">
+                    <img data-interchange="[http://placehold.it/690x350, (default)], [http://placehold.it/300x300, (custom_query)]" class="img-responsive">
                     <figcaption><h2>Main <span>Caption</span></h2>
 							<p>Sarah likes to watch clouds. She's quite depressed.</p>
 							<a href="#">View more</a>
@@ -188,13 +263,13 @@
         <!--bio-contact-container-->
     </section>
 
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/vendor/fastclick.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.offcanvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.tooltip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
     <script src="_/components/js/app.js"></script>
@@ -205,7 +280,7 @@
 <script>
     $(document).foundation('interchange', {
         named_queries: {
-            my_custom_query: 'only screen and (min-width: 768px)'
+            custom_query: 'only screen and (min-width: 768px)'
         }
     });
     $(function () {

@@ -1,5 +1,5 @@
-$(document).ready(function () {
-
+app.controller('AppController', function($scope, $rootScope, $http, $routeParams, $location, $window)
+{
     console.log("document ready");
     $(".fa-chevron-down").click(chevronClickHandler);
     $(".projects-item").click(projectsItemClick);
@@ -23,26 +23,16 @@ $(document).ready(function () {
         $('.bio-content').addClass('bio-content-active');
         console.log("open bio");
     }; //open bio
-
-    function projectsItemClick(evt) {
-        openBio();
-        var i = $(this).index() - 1;
-        $('.bio-carousel-container').slickGoTo(i);
-        var body = $("body");
-        var top = body.scrollTop() // Get position of the body
-
-        if (top != 0) {
-            body.animate({
-                scrollTop: 0
-            }, '300');
-        }
+    
+    function projectsItemClick(evt){
+        
     };
 
     var $masonryContainer = $('.masonry');
 
     $masonryContainer.imagesLoaded(function () {
         //might as well remove the spinners here too
-        $('figure').each(function (i) {
+        $('figure').each(function(i){
             $('.spinner-container').addClass('hidden');
         });
         $masonryContainer.masonry({
@@ -52,20 +42,4 @@ $(document).ready(function () {
             percentPosition: true,
         });
     });
-
-    //slick
-
-    $('.bio-carousel-container').slick({
-        autoplay: false,
-        speed: 300,
-        dots: false,
-        arrows: true,
-        infinite: false,
-        ease: 'ease-in-out',
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: ('<i class="fa fa-chevron-left"></i>'),
-        nextArrow: ('<i class="fa fa-chevron-right"></i>')
-
-    });
-});
+}
