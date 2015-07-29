@@ -138,7 +138,7 @@
 //need to set a height for each screen size
 .projects-item {
     width: span(12);
-    height: 350px;
+  
     margin-top: gutter();
     cursor: pointer;
 }
@@ -151,11 +151,11 @@
     }
     @media (min-width: $screen-sm) {
         width: span(3);
-        height: 300px;
+        height: 260px;
     }
     @media (min-width: $screen-md) {
         width: span(4);
-        height: 300px;
+        height: 260px;
     }
     @media (min-width: $screen-md) {
         width: span(3);
@@ -171,11 +171,11 @@
     }
     @media (min-width: $screen-sm) {
         width: span(3);
-        height: 400px;
+        height: 350px;
     }
     @media (min-width: $screen-md) {
         width: span(4);
-        height: 400px;
+        height: 440px;
     }
     @media (min-width: $screen-lg) {
         width: span(3);
@@ -211,9 +211,13 @@
     }
     @media (min-width: $screen-md) {
         width: span(6);
-        height: 300px;
+        height: 250px;
     }
     @media (min-width: $screen-lg) {
+        width: span(5);
+        height: 250px;
+    }
+    @media (min-width: $screen-xl) {
         width: span(5);
         height: 300px;
     }
