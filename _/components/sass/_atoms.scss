@@ -132,6 +132,10 @@ figure {
     position: relative;
 }
 
+img{
+    border:1px solid $md-grey;
+}
+
 hr {
     border-top: solid #d4d4d4;
   border-bottom: solid #adadad;

@@ -50,11 +50,6 @@
             @include transition(all $animationLength ease-in-out);
         }
     }
-    h3 {
-        font-weight: normal;
-        font-size: 16.18px;
-        font-size: 1.618rem;
-    }
     .bio-content {
         max-height: 0; //height does not work for css transitions
         overflow: hidden;
@@ -68,9 +63,8 @@
                 margin: 0 0 24px 0;
             }
             h3 {
+                font-family: 'Gochi Hand', serif;
                 font-weight: normal;
-                font-size: 24px;
-                font-size: 2.4rem;
                 color: $md-green;
             }
             p {
@@ -93,11 +87,11 @@
             position: absolute;
             bottom: 0;
             width: 768px;
-            @include background(rgba(212, 212, 212, .5));
+            @include background(rgba(212, 212, 212, .9));
             @media (min-width: 1250px) { //this just looks right
                 position: absolute;
                 bottom: 0px;
-                left: 769px;
+                left: 770px;
                 width: inherit;
                 max-width: 340px;
                 padding: 12px;
@@ -108,13 +102,14 @@
             }
             h3 {
                 padding-top: 3px;
-                color: $dk-grey;
+                color: $dk-green;
                 font-size: 20px;
                 font-size: 2rem;
             }
             p {
                 font-size: 16px;
                 font-size: 1.6rem;
+                color: $black;
             }
             a {
                 text-decoration: underline;
@@ -122,23 +117,12 @@
         }
     } //bio-carousel-content
 } //bio-carousel-container
-.body-container {}
 
 //body container
-/**--------------MASONRY--------------**/
-
-.projects-gutter {
-    width: gutter();
-}
-
-.projects-column {
-    width: span(1);
-}
+/**--------------GRID--------------**/
 
 //need to set a height for each screen size
 .projects-item {
-    width: span(12);
-  
     margin-top: gutter();
     cursor: pointer;
 }
@@ -146,80 +130,28 @@
 .projects-item-xs {
     //300x300 max
     @media (min-width: $screen-xs) {
-        width: span(4);
-        height: 300px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(3);
-        height: 260px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(4);
-        height: 260px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(3);
-        height: 300px;
+        @include span(3);
     }
 }
 
 .projects-item-sm {
     //300x440 max
     @media (min-width: $screen-xs) {
-        width: span(4);
-        height: 400px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(3);
-        height: 350px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(4);
-        height: 440px;
-    }
-    @media (min-width: $screen-lg) {
-        width: span(3);
-        height: 400px;
+         @include  span(4);
     }
 }
 
 .projects-item-md {
     //500x460 max
     @media (min-width: $screen-xs) {
-        width: span(8);
-        height: 400px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(7);
-        height: 400px
-    }
-    @media (min-width: $screen-md) {
-        width: span(5);
-        height: 480px
+         @include span(5);
     }
 }
 
 .projects-item-lg {
     //765x300
     @media (min-width: $screen-xs) {
-        width: span(8);
-        height: 300px;
-    }
-    @media (min-width: $screen-sm) {
-        width: span(7);
-        height: 300px;
-    }
-    @media (min-width: $screen-md) {
-        width: span(6);
-        height: 250px;
-    }
-    @media (min-width: $screen-lg) {
-        width: span(5);
-        height: 250px;
-    }
-    @media (min-width: $screen-xl) {
-        width: span(5);
-        height: 300px;
+         @include span(6);
     }
 }
 
@@ -232,7 +164,7 @@
 /**---------------ANIMATION----------------------**/
 
 figure.projects-figure {
-    background: $lt-blue;
+    background: $dk-green;
     overflow: hidden;
 }
 
@@ -247,7 +179,7 @@ figure.projects-figure img {
 }
 
 figure.projects-figure:hover img {
-    opacity: 0.6;
+    opacity: 0.3;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
@@ -261,6 +193,7 @@ figure.projects-figure figcaption {
 }
 
 figure.projects-figure h2 {
+    font-family: 'Raleway', sans-serif;
     position: relative;
     overflow: hidden;
     padding: 3px 0;
@@ -270,7 +203,7 @@ figure.projects-figure h2 {
     @include transform(translate3d(0, 22px, 0));
     @include transition-duration($animationLength);
     @include transition-property(all);
-    color: $lt-grey;
+    color: $black;
 }
 
 figure.projects-figure h2::after {
@@ -287,7 +220,7 @@ figure.projects-figure h2::after {
 }
 
 figure.projects-figure:hover h2 {
-    color: $dk-grey;
+    color: $md-grey;
     opacity: 1;
     @include transform(translate3d(0, 0, 0));
 }

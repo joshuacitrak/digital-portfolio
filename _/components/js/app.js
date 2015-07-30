@@ -37,21 +37,14 @@ $(document).ready(function () {
             }, '300');
         }
     };
+    
+  new imagesLoaded( '.projects-container', imagesAreLoaded )
 
-    var $masonryContainer = $('.masonry');
-
-    $masonryContainer.imagesLoaded(function () {
-        //might as well remove the spinners here too
-        $('figure').each(function (i) {
+  function imagesAreLoaded(evt){
+     $('figure').each(function (i) {
             $('.spinner-container').addClass('hidden');
         });
-        $masonryContainer.masonry({
-            columnWidth: '.projects-column',
-            gutter: '.projects-gutter',
-            itemSelector: '.projects-item',
-            percentPosition: true,
-        });
-    });
+  };
 
     //slick
 

@@ -3113,6 +3113,9 @@ button {
 figure {
   position: relative; }
 
+img {
+  border: 1px solid #adadad; }
+
 hr {
   border-top: solid #d4d4d4;
   border-bottom: solid #adadad;
@@ -3383,10 +3386,6 @@ hr {
     -o-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-.bio-content-container h3 {
-  font-weight: normal;
-  font-size: 16.18px;
-  font-size: 1.618rem; }
 .bio-content-container .bio-content {
   max-height: 0;
   overflow: hidden;
@@ -3403,9 +3402,8 @@ hr {
       .bio-content-container .bio-content .bio-desc-content {
         margin: 0 0 24px 0; } }
     .bio-content-container .bio-content .bio-desc-content h3 {
+      font-family: 'Gochi Hand', serif;
       font-weight: normal;
-      font-size: 24px;
-      font-size: 2.4rem;
       color: #11b252; }
     .bio-content-container .bio-content .bio-desc-content p {
       color: #6e6e6e;
@@ -3423,12 +3421,12 @@ hr {
       position: absolute;
       bottom: 0;
       width: 768px;
-      background: rgba(212, 212, 212, 0.5); }
+      background: rgba(212, 212, 212, 0.9); }
       @media (min-width: 1250px) {
         .bio-carousel-container .bio-carousel-content figcaption {
           position: absolute;
           bottom: 0px;
-          left: 769px;
+          left: 770px;
           width: inherit;
           max-width: 340px;
           padding: 12px; } }
@@ -3437,94 +3435,44 @@ hr {
         padding-left: 12px; }
       .bio-carousel-container .bio-carousel-content figcaption h3 {
         padding-top: 3px;
-        color: #6e6e6e;
+        color: #015531;
         font-size: 20px;
         font-size: 2rem; }
       .bio-carousel-container .bio-carousel-content figcaption p {
         font-size: 16px;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        color: #101010; }
       .bio-carousel-container .bio-carousel-content figcaption a {
         text-decoration: underline; }
 
-/**--------------MASONRY--------------**/
-.projects-gutter {
-  width: 1.20482%; }
-
-.projects-column {
-  width: 7.22892%; }
-
+/**--------------GRID--------------**/
 .projects-item {
-  width: 100%;
   margin-top: 1.20482%;
   cursor: pointer; }
 
 @media (min-width: 768px) {
   .projects-item-xs {
-    width: 32.53012%;
-    height: 300px; } }
-@media (min-width: 910px) {
-  .projects-item-xs {
     width: 24.09639%;
-    height: 260px; } }
-@media (min-width: 1028px) {
-  .projects-item-xs {
-    width: 32.53012%;
-    height: 260px; } }
-@media (min-width: 1028px) {
-  .projects-item-xs {
-    width: 24.09639%;
-    height: 300px; } }
+    float: left;
+    margin-right: 1.20482%; } }
 
 @media (min-width: 768px) {
   .projects-item-sm {
     width: 32.53012%;
-    height: 400px; } }
-@media (min-width: 910px) {
-  .projects-item-sm {
-    width: 24.09639%;
-    height: 350px; } }
-@media (min-width: 1028px) {
-  .projects-item-sm {
-    width: 32.53012%;
-    height: 440px; } }
-@media (min-width: 1290px) {
-  .projects-item-sm {
-    width: 24.09639%;
-    height: 400px; } }
+    float: left;
+    margin-right: 1.20482%; } }
 
 @media (min-width: 768px) {
-  .projects-item-md {
-    width: 66.26506%;
-    height: 400px; } }
-@media (min-width: 910px) {
-  .projects-item-md {
-    width: 57.83133%;
-    height: 400px; } }
-@media (min-width: 1028px) {
   .projects-item-md {
     width: 40.96386%;
-    height: 480px; } }
+    float: left;
+    margin-right: 1.20482%; } }
 
 @media (min-width: 768px) {
-  .projects-item-lg {
-    width: 66.26506%;
-    height: 300px; } }
-@media (min-width: 910px) {
-  .projects-item-lg {
-    width: 57.83133%;
-    height: 300px; } }
-@media (min-width: 1028px) {
   .projects-item-lg {
     width: 49.39759%;
-    height: 250px; } }
-@media (min-width: 1290px) {
-  .projects-item-lg {
-    width: 40.96386%;
-    height: 250px; } }
-@media (min-width: 1600px) {
-  .projects-item-lg {
-    width: 40.96386%;
-    height: 300px; } }
+    float: left;
+    margin-right: 1.20482%; } }
 
 .footer-contact-container {
   text-align: center; }
@@ -3533,7 +3481,7 @@ hr {
 
 /**---------------ANIMATION----------------------**/
 figure.projects-figure {
-  background: #14c1ff;
+  background: #015531;
   overflow: hidden; }
 
 figure.projects-figure img {
@@ -3557,7 +3505,7 @@ figure.projects-figure img {
   backface-visibility: false; }
 
 figure.projects-figure:hover img {
-  opacity: 0.6;
+  opacity: 0.3;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
@@ -3569,6 +3517,7 @@ figure.projects-figure figcaption {
   margin: 0 12px; }
 
 figure.projects-figure h2 {
+  font-family: 'Raleway', sans-serif;
   position: relative;
   overflow: hidden;
   padding: 3px 0;
@@ -3587,7 +3536,7 @@ figure.projects-figure h2 {
   -o-transition-property: all;
   -webkit-transition-property: all;
   transition-property: all;
-  color: #d4d4d4; }
+  color: #101010; }
 
 figure.projects-figure h2::after {
   position: absolute;
@@ -3611,7 +3560,7 @@ figure.projects-figure h2::after {
   transition-property: all; }
 
 figure.projects-figure:hover h2 {
-  color: #6e6e6e;
+  color: #adadad;
   opacity: 1;
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
