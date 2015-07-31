@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     function projectsItemClick(evt) {
         openBio();
-        var i = $(this).index() - 1;
+        var i = $(this).index(); //*3
         $('.bio-carousel-container').slickGoTo(i);
         var body = $("body");
         var top = body.scrollTop() // Get position of the body
