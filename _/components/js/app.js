@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     function projectsItemClick(evt) {
         openBio();
-        var i = $(this).index(); //*3
+        var i = $(this).index()*3;
         $('.bio-carousel-container').slickGoTo(i);
         var body = $("body");
         var top = body.scrollTop() // Get position of the body
@@ -35,6 +35,11 @@ $(document).ready(function () {
             body.animate({
                 scrollTop: 0
             }, '300');
+        }
+        
+        if(!$('.fa-chevron-down').hasClass('fa-rotate-180'))
+        {
+            $('.fa-chevron-down').addClass('fa-rotate-180');
         }
     };
     

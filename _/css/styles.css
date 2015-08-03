@@ -3447,32 +3447,36 @@ hr {
 
 /**--------------GRID--------------**/
 .projects-item {
-  margin-top: 1.20482%;
+  margin: 2.08333% 0;
   cursor: pointer; }
 
 @media (min-width: 768px) {
   .projects-item-xs {
-    width: 24.09639%;
+    width: 25%;
     float: left;
-    margin-right: 1.20482%; } }
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; } }
 
 @media (min-width: 768px) {
   .projects-item-sm {
-    width: 32.53012%;
+    width: 25%;
     float: left;
-    margin-right: 1.20482%; } }
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; } }
 
 @media (min-width: 768px) {
   .projects-item-md {
-    width: 40.96386%;
+    width: 33.33333%;
     float: left;
-    margin-right: 1.20482%; } }
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; } }
 
 @media (min-width: 768px) {
   .projects-item-lg {
-    width: 49.39759%;
+    width: 50%;
     float: left;
-    margin-right: 1.20482%; } }
+    padding-left: 1.04167%;
+    padding-right: 1.04167%; } }
 
 .footer-contact-container {
   text-align: center; }

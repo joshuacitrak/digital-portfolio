@@ -123,7 +123,7 @@
 
 //need to set a height for each screen size
 .projects-item {
-    margin-top: gutter();
+    margin: (gutter()*2) 0;
     cursor: pointer;
 }
 
@@ -137,14 +137,14 @@
 .projects-item-sm {
     //300x440 max
     @media (min-width: $screen-xs) {
-         @include  span(4);
+         @include  span(3);
     }
 }
 
 .projects-item-md {
     //500x460 max
     @media (min-width: $screen-xs) {
-         @include span(5);
+         @include span(4);
     }
 }
 
