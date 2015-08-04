@@ -86,7 +86,8 @@
         figcaption {
             position: absolute;
             bottom: 0;
-            width: 768px;
+            width:100%;
+            max-width: 769px;
             @include background(rgba(212, 212, 212, .9));
             @media (min-width: 1250px) { //this just looks right
                 position: absolute;
