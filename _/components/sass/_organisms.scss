@@ -82,13 +82,16 @@
 .bio-carousel-container {
     margin-bottom: 12px;
     .bio-carousel-content {
-        margin-bottom: 12px;
+        //margin-bottom: 12px;
         figcaption {
-            position: absolute;
-            bottom: 0;
             width:100%;
             max-width: 769px;
+            margin-top:-2px;
             @include background(rgba(212, 212, 212, .9));
+            @media (min-width: $screen-sm) {
+                position: absolute;
+                bottom: 0;
+            }
             @media (min-width: 1250px) { //this just looks right
                 position: absolute;
                 bottom: 0px;
@@ -111,6 +114,10 @@
                 font-size: 16px;
                 font-size: 1.6rem;
                 color: $black;
+                padding-bottom: 6px;
+                @media (min-width: $screen-xs) {
+                    padding-bottom:inherit;
+                }
             }
             a {
                 text-decoration: underline;
