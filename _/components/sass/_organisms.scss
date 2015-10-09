@@ -84,15 +84,16 @@
     .bio-carousel-content {
         //margin-bottom: 12px;
         figcaption {
-            width:100%;
+            width: 100%;
             max-width: 769px;
-            margin-top:-2px;
+            margin-top: -2px;
             @include background(rgba(212, 212, 212, .9));
             @media (min-width: $screen-sm) {
                 position: absolute;
                 bottom: 0;
             }
-            @media (min-width: 1250px) { //this just looks right
+            @media (min-width: 1250px) {
+                //this just looks right
                 position: absolute;
                 bottom: 0px;
                 left: 770px;
@@ -116,7 +117,7 @@
                 color: $black;
                 padding-bottom: 6px;
                 @media (min-width: $screen-xs) {
-                    padding-bottom:inherit;
+                    padding-bottom: inherit;
                 }
             }
             a {
@@ -125,7 +126,6 @@
         }
     } //bio-carousel-content
 } //bio-carousel-container
-
 //body container
 /**--------------GRID--------------**/
 
@@ -145,21 +145,28 @@
 .projects-item-sm {
     //300x440 max
     @media (min-width: $screen-xs) {
-         @include  span(3);
+        @include span(3);
     }
 }
 
 .projects-item-md {
     //500x460 max
     @media (min-width: $screen-xs) {
-         @include span(4);
+        @include span(4);
     }
 }
 
 .projects-item-lg {
     //765x300
     @media (min-width: $screen-xs) {
-         @include span(6);
+        @include span(6);
+    }
+}
+
+.projects-item-xl {
+    //765x300
+    @media (min-width: $screen-xs) {
+        @include span(9);
     }
 }
 
@@ -257,4 +264,28 @@ figure.projects-figure a {
     opacity: 0;
     display: none;
     margin-left: -9999px;
+}
+
+figure.projects-figure.banner-figure {
+    @include background(lighten($lt-grey, 10%));
+    overflow: visible;
+    margin-bottom: 65px;
+    figcaption {
+        text-align: left;
+        position: absolute;
+        top: 95%;
+        left: 0;
+        margin: 0 12px;
+    }
+    figcaption.banner-caption-xl{
+        top:100%;
+    }
+    &:hover h2 {
+        color: $md-blue;
+    }
+    p {
+        color: $md-grey;
+    }
+}
+figure.projects-figure.banner-figure.banner-figure-xl {
 }
